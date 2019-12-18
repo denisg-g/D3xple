@@ -25,5 +25,5 @@ app.set('views','./public/views');
 // index page 
 app.use('/', homeController);
 
-
-app.listen(8000, () => console.log('Server running on http://localhost:8000/'));
+port = process.env.PORT || 80
+app.listen(port, () => console.log('Server running on http://localhost:8000/'));
